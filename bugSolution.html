@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Corrected approach using insertAdjacentHTML
+    document.getElementById("myDiv").insertAdjacentHTML('beforeend', "<p>This is a paragraph.</p>");
+  </script>
+</body>
+</html>
